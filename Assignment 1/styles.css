@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "Benne";
+    src: url('./fonts/Benne-Regular.ttf');	
+}
+
+a:link {
+    transition: all 0.5s;
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #ae9453;
+  }
+  
+  a:active {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+     width: 100%;
+     display: table;
+     margin: 0;
+     max-width: none;
+     background-color: white;
+     height: 100vh;
+}
+
+#intro {
+    height: 100vh;
+    font-family: "Benne", sans serif;
+    background-image: url('./img/image3.png');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+#menu {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+#menu-left {
+    display: flex;
+    width: 50%;
+    align-items: left;
+    font-size: 1em;
+    padding-left: 10rem;
+}
+
+#logo {
+    color:#ae9453;
+}
+
+#menu-right {
+    padding: 30px;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+}
+
+#menu-option {
+    width: 25%;
+    text-align: left;
+    font-size: 1em;
+    padding: 10;
+}
+
+#slogan-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slogan {
+    width: 50%;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: 15px;
+    font-size: 4em;
+    color: white;
+    padding-top: 30px;
+
+    font-family: "Benne", sans serif;
+}
+
+#services-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Benne", sans serif;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+#services-left {
+    display: flex;
+    width: 40%;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-right {
+    display: flex;
+    width: 60%;
+    height: 550px;
+    align-items: center;
+}
+
+#services-content {
+    width: 70%;
+    height: 90%;
+    background-image: url('./img/flower.png');
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services-title {
+    font-size: 2em;
+    letter-spacing: 5px;
+    color: white;
+    margin-top: 35%;
+}
+
+#services-slogan {
+    width: 70%;
+    font-size: 1.25em;
+    color: white;
+    margin-top: 35%;
+    text-align: center;
+    line-height: 30px;
+}
+
+#services-button {
+    width: 70%;
+    margin-top: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+#services-img {
+    width: 90%;
+    height: 90%;
+    background-image: url('./img/image1.png');
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Benne", sans serif;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+#testimonial-content-container {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+#testimonial-content {
+    text-align: center;
+    font-size: 2em;
+}
+
+#testimonial-left {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+#testimonial-center {
+    width: 50%;
+    line-height: 70px;
+}
+
+#testimonial-right {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: end;
+    align-items: center;
+}
+
+#testimonial-author {
+    font-size: 1.4em;
+    color: #ae9453;
+}
+
+#gallery-container {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-family: "Benne", sans serif;
+    margin-top: 10%;
+    padding: 20px;
+    background-image: url('./img/image2.png');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#footer-container {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Benne", sans serif;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #ae9453;
+}
+
+#contact-container {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 20px;
+    height: 100%;
+    color: white;
+}
+
+#address {
+    width: 20%;
+    margin-left: 50px;
+}
+
+#contact-info {
+   width: 20%;
+}
+
+#copyright {
+    width: 30%;
+}
+
+.divider {
+    width: 1px;
+    background-color: white;
+    height: 130px;
+    margin: 0 50px;
+}
+
+#footer-button-container {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+#book-button {
+    width: 60%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+#menu-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-size: 2em;
+    line-height: 3px;
+}
