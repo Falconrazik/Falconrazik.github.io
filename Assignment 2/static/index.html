@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 | CSCI 571</title>
+    <link href="/static/index.css" rel="stylesheet">
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+</head>
+
+<body>
+  <!-- SEARCH SECTION -->
+  <div id="main-container">
+    <div class="search-container">
+      <p>Stock Search</p>
+      <form class="search-box">
+        <button id="submit-button" type="button">
+          <img src="/static/img/search-solid.svg" alt="Search Icon" width="15" height="15">
+        </button>
+        <input id="search-input" type="text" placeholder="Enter Stock Ticker Symbol" required>
+        <button id="reset-button">
+          <img src="/static/img/times-solid.svg" alt="Search Icon" width="17" height="17">
+        </button>
+      </form>
+    </div>
+  </div>
+  <!-- END -->
+
+  <div class="tabs">
+    <div class="active-tab">Company</div>
+    <div>Stock Summary</div>
+    <div>Charts</div>
+    <div>Latest News</div>
+  </div>
+
+  <!-- ERROR MESSAGE -->
+  <div id="error-message">
+    <p>Error: No record has been found, please enter a valid symbol</p>
+  </div>
+  <!-- EMD -->
+
+  <!-- COMPANY SECTION -->
+  <div id="company-tab-container">
+    <div id="company-tab">
+      <div class="card">
+        <img id="company-logo" src="https://static2.finnhub.io/file/publicdatany/finnhubimage/stock_logo/AAPL.svg" alt="Default Logo">
+        <div class="info">
+          <strong class="title">Company Name</strong> 
+          <p class="content" id="company-name"> Tesla Inc</p>
+        </div>
+        <div class="info">
+          <strong class="title">Stock Ticker Symbol</strong> 
+          <p class="content" id="company-stock-ticker"> TSLA</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Stock Exchange Code</strong> 
+          <p class="content" id="company-stock-exchange"> NASDAQ NMS - GLOBAL MARKET</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Company Start Date</strong> 
+          <p class="content" id="company-start-date"> 2010/06/09</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Category</strong> 
+          <p class="content" id="company-category"> Automobile</p>      
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END -->
+
+  <!-- STOCK SUMMARY SECTION-->
+  <div id="stock-summary-container">
+    <div id="stock-tab">
+      <div class="card">
+        <div class="info">
+          <strong class="title">Stock Ticker Symbol</strong> 
+          <p class="content" id="stock-ticker"> TSLA</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Trading Day</strong> 
+          <p class="content" id="trading-day"> Tesla Inc</p>
+        </div>
+        <div class="info">
+          <strong class="title">Previous Closing Price</strong> 
+          <p class="content" id="previous-price"> TSLA</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Openning Price</strong> 
+          <p class="content" id="openning-price"> NASDAQ NMS - GLOBAL MARKET</p>      
+        </div>
+        <div class="info">
+          <strong class="title">High Price</strong> 
+          <p class="content" id="high-price"> 2010/06/09</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Low Price</strong> 
+          <p class="content" id="low-price"> Automobile</p>      
+        </div>
+        <div class="info">
+          <strong class="title">Change</strong> 
+          <div class="content">
+            <p id="stock-change" id="stock-change"> Automobile</p>
+            <img id="stock-change-indicator" src="/static/img/GreenArrowUp.png" alt="Search Icon" width="15" height="15">
+          </div>
+        </div>
+        <div class="info">
+          <strong class="title">Change Percent</strong> 
+          <div class="content">
+            <p id="change-percent"> Automobile</p>
+            <img id="change-percent-indicator" src="/static/img/GreenArrowUp.png" alt="Search Icon" width="15" height="15">
+          </div>
+        </div>
+      </div>
+
+      <div class="recommendation-section">
+        <span id="sell-label">Strong Sell</span>
+        <span class="value" id="strong-sell">4</span>
+        <span class="value" id="sell">4</span>
+        <span class="value" id="hold">20</span>
+        <span class="value" id="buy">15</span>
+        <span class="value" id="strong-buy">7</span>
+        <span id="buy-label">Strong Buy</span>
+      </div>
+      <p id="trend-title">Recommendation Trends</p>
+    </div>
+  </div>
+  <!-- END -->
+
+  <!-- NEWS SECTION -->
+  <div id="news-container">
+    <!-- News articles will be dynamically inserted here by JavaScript -->
+  </div>
+  <!-- END -->
+
+  <!-- CHARTS SECTION -->
+  <div id="chart"></div>
+  <!-- END -->
+
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
