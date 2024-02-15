@@ -1,4 +1,4 @@
-/* styles.css */
+/* index.css */
 body {
   margin: 0;
   display: flex;
@@ -200,19 +200,19 @@ body {
 }
 
 #strong-sell {
-  background-color: #ed2937; /* Red */
+  background-color: #ed2937; 
 }
 #sell {
-  background-color: #b25f4a; /* Red */
+  background-color: #b25f4a;
 }
 #hold {
-  background-color: #77945c; /* Yellow */
+  background-color: #77945c;
 }
 #buy {
-  background-color: #3cca6c; /* Green */
+  background-color: #3cca6c;
 }
 #strong-buy {
-  background-color: #02ff7f; /* Green */
+  background-color: #02ff7f;
 }
 
 .recommendation-section .value {
@@ -279,8 +279,8 @@ body {
 
 #chart {
     width: 1000px;
-    height: 800px; /* or any other height */
-    max-width: 1200px; /* or any other max-width */
+    height: 800px; 
+    max-width: 1200px;
     margin-top: 20px;
     margin-bottom: 50px;
 }

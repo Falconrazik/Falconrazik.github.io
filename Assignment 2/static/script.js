@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const tabs = document.querySelectorAll('.tabs div');
   const companyTab = document.getElementById('company-tab');
   const stockSummaryContainer = document.getElementById('stock-summary-container');
-  // Other tabs would be added here
 
   // Initially hide the tabs and their content sections
   tabsContainer.style.display = 'none';
@@ -88,9 +87,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   async function handleSearch() {
-    const stockSymbol = document.getElementById('search-input').value;
+    const stockSymbol = document.getElementById('search-input').value.toUpperCase();
     if (!stockSymbol) {
-      // alert('Please enter a stock ticker symbol.');
       return; // Exit if no symbol is entered
     }
   
@@ -179,16 +177,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let displayedCount = 0;
     for (let article of articles) {
-        if (article.image && article.headline && article.datetime && article.url &&
-            article.image !== "" && article.headline !== "" && article.url !== "") {
-            const articleElem = createArticleElement(article);
-            newsContainer.appendChild(articleElem);
-            displayedCount++;
-        }
+      if (article.image && article.headline && article.datetime && article.url &&
+        article.image !== "" && article.headline !== "" && article.url !== "") {
+        const articleElem = createArticleElement(article);
+        newsContainer.appendChild(articleElem);
+        displayedCount++;
+      }
 
-        if (displayedCount === 5) {
-            break; // Stop the loop when 5 articles have been displayed
-        }
+      if (displayedCount === 5) {
+        break; // Stop the loop when 5 articles have been displayed
+      }
     }
   }
 
@@ -217,22 +215,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let tickerSymbol = ''
   function populateCompanyProfile(data) {
-      const logoElement = document.getElementById('company-logo');
-      const nameElement = document.getElementById('company-name');
-      const companyTickerElement = document.getElementById('company-stock-ticker');
-      const stockTickerElement = document.getElementById('stock-ticker'); 
-      const exchangeElement = document.getElementById('company-stock-exchange');
-      const startDateElement = document.getElementById('company-start-date');
-      const categoryElement = document.getElementById('company-category');
+    const logoElement = document.getElementById('company-logo');
+    const nameElement = document.getElementById('company-name');
+    const companyTickerElement = document.getElementById('company-stock-ticker');
+    const stockTickerElement = document.getElementById('stock-ticker'); 
+    const exchangeElement = document.getElementById('company-stock-exchange');
+    const startDateElement = document.getElementById('company-start-date');
+    const categoryElement = document.getElementById('company-category');
 
-      logoElement.src = data.logo;
-      nameElement.textContent = data.name;
-      companyTickerElement.textContent = data.ticker;
-      stockTickerElement.textContent = data.ticker;
-      tickerSymbol = data.ticker;
-      exchangeElement.textContent = data.exchange;
-      startDateElement.textContent = data.ipo;
-      categoryElement.textContent = data.finnhubIndustry;
+    logoElement.src = data.logo;
+    nameElement.textContent = data.name;
+    companyTickerElement.textContent = data.ticker;
+    stockTickerElement.textContent = data.ticker;
+    tickerSymbol = data.ticker;
+    exchangeElement.textContent = data.exchange;
+    startDateElement.textContent = data.ipo;
+    categoryElement.textContent = data.finnhubIndustry;
   }
 
   function populateStockSummary(data) {
