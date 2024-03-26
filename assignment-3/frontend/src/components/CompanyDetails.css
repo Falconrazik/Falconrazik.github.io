@@ -1,0 +1,139 @@
+#main-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.company-details {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .company-details h1 {
+    font-size: 2rem;
+  }
+  
+  .company-details h2 { 
+    font-size: 1.5rem;
+  }
+  
+  .company-logo {
+    width: 100px; /* Adjust size as necessary */
+  }
+
+  .company-header {
+    flex: 2;
+    text-align: center;
+  }
+
+  .stock-price {
+    flex: 2;
+    text-align: center;
+  }
+
+  .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price-increase {
+    color: green;
+  }
+  
+  .price-decrease {
+    color: red;
+  }
+
+  .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-logo {
+    width: 30px;
+    padding: 5px;
+  }
+  
+/* General styles for the action message */
+.action-message {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1050; /* Above most content */
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 5s forwards; /* Animation to show the message and then fade out */
+    text-align: center;
+    font-size: 1rem;
+}
+  
+  /* Specific styles for success */
+  .success {
+    background-color: #cae3da; /* Bootstrap success color */
+    color: #587568;
+  }
+  
+  /* Specific styles for error */
+  .error {
+    background-color: #f6d1d5; /* Bootstrap danger color */
+    color: #a6787d;
+  }
+
+@media (max-width: 397px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .company-logo {
+    width: 30px;
+  }
+
+  .company-details h1 {
+    font-size: 1.5rem;
+  }
+  
+  .company-details h2 { 
+    font-size: 1.2rem;
+  }
+
+  .company-header p {
+    font-size: 0.8rem;
+  }
+
+  .price-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .market-date {
+    font-size: 0.55rem;
+  }
+
+  .popup-message {
+    flex: 5 !important;
+    font-size: 0.8rem;
+    padding-right: 10px !important;
+  }
+
+  .company-footer strong {
+    font-size: 0.8rem;
+  }
+}

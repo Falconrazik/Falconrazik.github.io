@@ -1,0 +1,50 @@
+.navbar {
+  background-color: #1d279d !important; /* The background color of the navbar */
+}
+
+.nav-active {
+  border-radius: 20px !important;
+  border: 1px solid white !important;
+}
+
+.navbar-brand {
+  font-size: 1.5em; /* Size of the brand text */
+  font-weight: bold; /* Makes the text bold */
+  color: white; /* Sets the text color to white */
+}
+
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5); /* Lighter border color for the toggler icon */
+}
+
+.nav-link {
+  color: white; /* Color of the link text */
+  margin-right: 20px; /* Spacing between the links */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #ccc; /* Slightly lighter color on hover/focus */
+}
+
+.nav-active {
+  color: #FFF; /* White color text for active link */
+  border-radius: 15px; /* Rounded corners for the active link background */
+  padding: 5px 15px; /* Padding inside the active link to give some space around the text */
+}
+
+.navbar-light .navbar-toggler-icon {
+  filter: invert(1) grayscale(0) brightness(2);
+}
+
+/* Media query for responsiveness */
+@media (max-width: 397) {
+  .navbar-nav .nav-link {
+    margin-right: 0; /* Remove margin for smaller screens */
+    padding: 8px 15px; /* Add padding to increase touch target size */
+    border-bottom: 1px solid white; /* A bottom border for each link for better separation */
+  }
+
+  .nav-active {
+    border-radius: 0; /* Remove border radius on active link in collapsed menu */
+  }
+}

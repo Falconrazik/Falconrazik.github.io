@@ -1,0 +1,24 @@
+#company-tabs {
+    width: 80%;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  #company-tabs .nav-link.active {
+    color: blue;
+    border: none;
+    border-bottom: 2px solid blue;
+  }
+
+  #company-tabs .nav-link {
+    width: 250px;
+  }
+  
+  /* Style for unselected tabs */
+  .nav-tabs .nav-link {
+    color: grey; /* Grey color for inactive tabs */
+  }

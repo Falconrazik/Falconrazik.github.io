@@ -1,0 +1,57 @@
+.my-watchlist {
+    width: 80%;
+    max-width: 800px;
+    padding-top: 5%;
+}
+
+.watchlist-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.watchlist-card button {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    width: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.stock-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.error-message {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    background-color: #fef1c9;
+    margin-top: 5%;
+}
+
+.arrow-logo {
+    width: 20px;
+    padding: 5px;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+  }
+  

@@ -1,0 +1,54 @@
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgrey; /* or any color that suits your design */
+  color: black; /* or any color that suits your design */
+  text-align: center;
+  padding: 10px 0; /* Add some padding for aesthetics */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  min-height: 150vh; /* or any other value */
+}
+
+.error {
+  display: flex;
+  width: 60%;
+  background-color: aqua;
+}
+
+.error-test {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #f6d1d5;
+  margin-top: 3%;
+}
+
+.message {
+  flex: 2;
+  text-align: center;
+}
+
+.error-btn {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  color: #806c6f;
+}
+

@@ -1,0 +1,124 @@
+.portfolio-container {
+    width: 60%;
+    padding-top: 5%;
+}
+  
+  .portfolio-item {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px; /* Space between portfolio items */
+    background-color: white; /* White background */
+  }
+
+.name-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.information-container {
+    display: flex;
+}
+
+.information-container p {
+    margin: 5px 0; /* Adjust the margin to decrease line spacing */
+
+}
+
+.stats-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-top: 1px solid #e9e9e9;
+}
+
+/* General styles for the action message */
+.action-message {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1050; /* Above most content */
+    padding: 1rem 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 5s forwards; /* Animation to show the message and then fade out */
+    text-align: center;
+    font-size: 1rem;
+}
+  
+  /* Specific styles for success */
+  .success {
+    background-color: #cae3da; /* Bootstrap success color */
+    color: #587568;
+  }
+  
+  /* Specific styles for error */
+  .error {
+    background-color: #f6d1d5; /* Bootstrap danger color */
+    color: #a6787d;
+  }
+
+  .close-button {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    text-align: right;
+    color: #806c6f;
+  }
+
+  .error-message {
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    background-color: #fef1c9;
+  }
+  
+  /* Keyframes for the fadeInOut animation */
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    10%, 90% {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @media (max-width: 397px) {
+    .portfolio-container {
+      width: 95%;
+      margin-top: 5%;
+    }
+  
+    .name-container, .footer-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .information-container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .stats-container {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  }

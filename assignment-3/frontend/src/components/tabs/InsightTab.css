@@ -1,0 +1,21 @@
+.recommendation-chart {
+    width: 500px;
+}
+
+.eps-chart {
+    width: 500px;
+}
+
+@media (max-width: 397px) {
+    .test-charts {
+        flex-direction: column !important;
+    }
+
+    .recommendation-chart {
+        max-width: 400px;
+    }
+
+    .eps-chart {
+        max-width: 400px;
+    }
+}

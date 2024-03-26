@@ -1,0 +1,86 @@
+/* NewsModal.css */
+.modal-background {
+  position: fixed; /* Use fixed to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* High z-index to be on top of other content */
+  overflow-y: auto; /* Allows scrolling if the modal is taller than the screen */
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%; /* Adjust width as per your design */
+  max-width: 600px; /* Maximum width of the modal */
+  min-width: 300px; /* Minimum width of the modal */
+  max-height: 80vh; /* Max height to ensure it doesn't go off screen */
+  overflow-y: auto; /* Enable scroll inside modal if content is long */
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+}
+
+.close-button {
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.test-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.share-footer {
+  display: flex;
+  flex-direction: row; /* Change to row to place share buttons in a line */
+  align-items: center;
+  margin-top: 5%;
+  justify-content: flex-start; /* Align content to the start */
+}
+
+/* Social share buttons */
+.twitter-share-button,
+.facebook-share-button {
+  margin-right: 15px; /* Add spacing between buttons */
+}
+
+/* Add styles for the hr to match your design if needed */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd; /* Light gray line */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Make sure images don't exceed their container */
+img {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 397px) {
+  .modal-container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,51 @@
+.main-container {
+    width: 100%;
+}
+
+.summary-tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-container {
+    flex: 3;
+}
+
+.right-container {
+    flex: 3;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 397px) {
+    .summary-tab {
+        flex-direction: column;
+        justify-content: center;
+        min-width: none;
+    }
+
+    .left-container {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .chart-container {
+        max-width: 400px;
+    }
+
+    .company-info {
+        margin-top: 0;
+    }
+
+    .price-details {
+        text-align: center;
+    }
+}

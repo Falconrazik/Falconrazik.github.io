@@ -1,0 +1,83 @@
+.search-container {
+    margin-top: 50px;
+    width: 60%;
+}
+
+.search-bar .input-group {
+    max-width: 500px; /* Adjust based on your layout */
+    margin: auto;
+    border-radius: 25px;
+    padding: 5px;
+    border: 3px solid blue;
+  }
+  
+#form-input {
+    border: 0
+}
+
+/* Custom styles for buttons to align with the design */
+.search-bar .input-group .btn {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: black;
+    border: 0;
+}
+
+/* Style adjustments for icons if necessary */
+.search-bar .bi-search, .search-bar .bi-x-lg {
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
+.autocomplete-container {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0;
+    position: absolute;
+    z-index: 1000; /* Make sure it appears above other content */
+    width: 60%; /* Match the width of the input field */
+}
+
+.autocomplete-suggestions {
+    padding: 20px;
+    max-height: 300px; /* Set a max height to enable scroll */
+    overflow-y: scroll; /* Enable scrolling */
+    background-color: white;
+    list-style: none;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+  
+.autocomplete-suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestions li:hover {
+    background-color: #f2f2f2;
+}
+
+.action-message {
+    margin-top: 3%;
+    background-color: #f6d1d5; /* Bootstrap danger color */
+    color: #a6787d;
+}
+
+.popup-message {
+    flex: 2;
+    text-align: right;
+    padding-right: 90px;
+}
+  
+@media (max-width: 397px) {
+    .search-container {
+        width: 80%;
+    }
+
+    /* Style adjustments for icons if necessary */
+    .search-bar .bi-search, .search-bar .bi-x-lg {
+        color: blue;
+    }
+}
