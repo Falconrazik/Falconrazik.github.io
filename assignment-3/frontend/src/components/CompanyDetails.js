@@ -152,8 +152,8 @@ const CompanyDetails = () => {
   const fiveMinutes = 5 * 60 * 1000; // 5 minutes in milliseconds
   const isMarketOpen = (currentTime - lastUpdateTime) < fiveMinutes;
 
-  const formatDate = (unixTimestamp) => {
-    const date = new Date(unixTimestamp * 1000); // Convert Unix timestamp to milliseconds
+  const formatDate = (lastTimeMillisecond) => {
+    const date = new Date(lastTimeMillisecond);
     const year = date.getFullYear();
     const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Months are 0-indexed
     const day = date.getDate().toString().padStart(2, '0');

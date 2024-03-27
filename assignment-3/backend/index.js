@@ -1,11 +1,14 @@
 const express = require('express');
 require('dotenv').config(); // To access environment variables
+const path = require('path'); // Add this line to require the path module
 const axios = require('axios'); // Import axios
 const app = express();
 const PORT = process.env.PORT || 3001;
 const { client } = require('./mongoDB'); // Assuming you have exported your MongoDB client object from 'mongodbConnection.js'
 
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, './build')));
 
 // Define the API endpoint
 app.get('/api/description/:symbol', async (req, res) => {
@@ -506,8 +509,13 @@ app.post('/api/portfolio/check', async (req, res) => {
 });
 
 
-
+// --- Server Configuration -- //
 // Start the server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on PORT: ${PORT}`);
+});
+
+// Handles any requests that don't match the API routes
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './build/index.html'));
 });
